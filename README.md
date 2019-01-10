@@ -2,6 +2,19 @@
 
 [Inspired](https://github.com/llSourcell/100_Days_of_ML_Code) by Siraj Raval.
 
+## Day 3. January 10, Thursday.
+
+Today I was able to run the pretrained fastai model, as per Lesson 1 instructions. At first I got an error and couldn't figure it out but then realized I had a parameter wrong, I used `tfms` instead of `ds_tfms` when creating my dataset object.
+
+Then, training took too long. About 23000 images, 15 minutes per epoch for finetuning on resnet50. That is too slow, as it should take about 2-4 minutes, by my expectation. I then realized my CPU was loaded 100% and GPU power draw was only 80 watts out of 250 watts maximum. Clearly this is a CPU bottleneck, probably doing on the fly data augmentation and resizing. The images are all quite large and all different sizes, so this maybe is a contributing factor.
+
+Maybe I will try to look into ways to optimize this - one way is to resize all images to 300 by 300 and then use those resized images during training.
+
+On the good side, I was able to get to 7.85% error rate. I will try to do more tomorrow.
+
+I also found a little bug in fastai part one version 3 course, I submitted a [pull request](https://github.com/fastai/course-v3/pull/138). Who knows, maybe it will get accepted.
+
+
 ## Day 2. January 9, Wednesday
 
 Today I spent time additionally cleaning the data for skin lesion classifier. I decided to only go with 2 classes for now - malignant and benign.
