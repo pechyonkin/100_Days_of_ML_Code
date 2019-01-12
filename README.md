@@ -2,6 +2,53 @@
 
 [Inspired](https://github.com/llSourcell/100_Days_of_ML_Code) by Siraj Raval.
 
+## Day 5. January 12, Saturday.
+
+### Reading
+
+Today is a reading day. Topics related to data science and careers in data science.
+
+A very nice blog by Tim Hopper:
+
+1. [How I Quit My Ph.D. and Learned to Love Data Science](https://tdhopper.com/blog/how-i-quit-my-ph.d.-and-learned-to-love-data-science/)
+2. [How I Became a Data Scientist Despite Having Been a Math Major](https://tdhopper.com/blog/how-i-became-a-data-scientist/)
+3. [I Basically Can’t Hire People Who Don’t Know Git](https://tdhopper.com/blog/data-scientists-at-work/)
+4. [A Subjective and Anecdotal FAQ on Becoming a Data Scientist](https://tdhopper.com/blog/faq/)
+
+### Coding
+
+Today I fixed the issue with train-validation-test split used for `.from_csv()` in `fastai` library in my [102 flowers classifier]().
+
+I made folders so that I could have dataset as per [ImageDataBunch.from_csv()](https://docs.fast.ai/vision.data.html#ImageDataBunch.from_csv).
+
+We will have to have structure like this:
+
+```
+path/
+  /train
+  /test
+  labels.csv
+```
+
+In addition, `labels.csv` has to have structure like:
+
+```
+filename_1, category
+filename_2, category
+       ...,      ...
+filename_n, category
+```
+
+**Notes**:
+
+- I looked at [source code](https://github.com/fastai/fastai/blob/master/fastai/vision/data.py#L132) to figure out the proper way to set up data set structure. Basically, `.from_csv` calls `.from_df()` under the hood. And that calls `.create_from_ll()` which in itself sets up the test folder properly. Test folder parameter is passed through as `**kwargs` all the way from `.from_csv()`.
+
+- `test` parameter should be a folder of images. By default `labels.csv` will be used as train data with random split given by the parameter `valid_pct`. So I used both `train.txt` and `valid.txt` coming with the original 102 flowers data set to generate `labels.csv`. Then I used `test.txt` to generate `labels_test.csv` that can be used for testing later. Note that `labels_test.csv` is not used in training directly, it can only be used later to assess out-of-sample performance of the model.
+
+- `folder` parameter is the root directory realative to which paths in `labels.csv` will be loaded as data. By default it is `.` which is current directory.
+
+- after the proper split I have 2039 images for train and validation. With the default 20% validation this means 1627 images for training and 412 images for validation. Official test set for this data set is 6149 images. Because the train set is so small compared to improperly used yesterday, my today's best accuracy is about 8%. I can easily make it much better by using some data from test data set, but for now this is a good result.
+
 ## Day 4. January 11, Friday.
 
 I finished my skin lesion classifier. Error rate about 7%. But true positive rate about 60% which is pretty low. Probably class imbalance. I will come back to this project later when I learn how to make a custom more balanced data set feeder with fastai.
