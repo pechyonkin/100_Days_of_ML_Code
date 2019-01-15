@@ -2,6 +2,28 @@
 
 [Inspired](https://github.com/llSourcell/100_Days_of_ML_Code) by Siraj Raval.
 
+## Day 6. January 15, Tuesday.
+
+Today I watched fastai part one, version 3 lecture 2.
+
+### Tips
+
+- `doc(fastai_name)` - nice documentation for any fastai function
+
+### Related Links
+
+- [Ethan Sutin](https://twitter.com/ethansutin) - created a SOTA spectrogram classifier
+- [Audacity](https://www.audacityteam.org/) - free audio editor
+- [The difference between GitHub repos and gists](https://stackoverflow.com/questions/6767518/what-is-the-difference-between-github-and-gist)
+- [Gist it](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/gist_it/readme.html) - make gists from Jupyter Notebooks
+- [ipywidgets](https://ipywidgets.readthedocs.io/en/stable/) - create your own Jupyter Notebook widgets [AWESOME]
+- [The Jupyter Widget Ecosystem](https://github.com/jupyter-widgets/tutorial) - Tutorial, SciPy 2018
+- [Share your work here](https://forums.fast.ai/t/share-your-work-here/27676) - creative applications of deep learning from students of fastai part 1 v3 [access only for fastai international fellows]
+- [The Mystery of the Origin — Cancer Type Classification using Fast.AI Library](https://towardsdatascience.com/the-mystery-of-the-origin-cancer-type-classification-using-fast-ai-libray-212eaf8d3f4e) [blog post by Alena Harley]
+- Python's [`await`](https://docs.python.org/3/library/asyncio-task.html)
+- [Starlette](https://www.starlette.io/) web app framework
+- [Matrix Multiplicaion XYZ](http://matrixmultiplication.xyz/)
+
 ## Day 5. January 12, Saturday.
 
 ### Reading
