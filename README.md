@@ -2,6 +2,23 @@
 
 [Inspired](https://github.com/llSourcell/100_Days_of_ML_Code) by Siraj Raval.
 
+---
+## Important Notes
+
+1. [How to run](./jupyter-guide.md) Jupyter Notebook on a remote server and access via ssh on a local machine
+2. [Tmux cheatsheet](./tmux-cheatsheet.md)
+
+---
+
+## Day 7. January 16, Wednesday.
+
+Today I finished fastai part 1 v3 lesson 2.
+
+I also set up repos for development of fastai and fastai_docs so that I can contribute to these libraries. There are some standards of contribution, such as stripping notebooks of outputs when committing, the instructions are:
+
+- for [`fastai`](https://docs.fast.ai/dev/develop.html)
+- for [`fastai_docs`](https://github.com/fastai/fastai_docs)
+
 ## Day 6. January 15, Tuesday.
 
 Today I watched fastai part one, version 3 lecture 2.
