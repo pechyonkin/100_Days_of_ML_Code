@@ -3,7 +3,7 @@
 [Inspired](https://github.com/llSourcell/100_Days_of_ML_Code) by Siraj Raval.
 
 ---
-## Important Notes
+#### Frequently Used
 
 1. [How to run](./jupyter-guide.md) Jupyter Notebook on a remote server and access via ssh on a local machine
 2. [Tmux cheatsheet](./tmux-cheatsheet.md)
@@ -18,6 +18,41 @@ I also set up repos for development of fastai and fastai_docs so that I can cont
 
 - for [`fastai`](https://docs.fast.ai/dev/develop.html)
 - for [`fastai_docs`](https://github.com/fastai/fastai_docs)
+- [doc](https://docs.fast.ai/gen_doc_main.html) about authoring fastai docs
+
+Today [my first pull request](https://github.com/fastai/course-v3/pull/138#issuecomment-454647053) to the fastai library was merged. It is a very small change, but I am still happy. So I decided to deepen my knowledge about how to contribute. To summarize, the steps are below (taken from [here](https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/)).
+
+#### Steps to contribute to fastai
+
+1. Fork the project & clone locally. 
+2. Create an upstream remote.
+	- `git remote add upstream git@github.com:fastai/course-v3.git`
+3. sync your local copy before you branch.
+	- `git checkout master`
+	- `git pull upstream master && git push origin master`
+3. Branch for each separate piece of work.
+	- `git checkout -b hotfix/readme-update` (`hotfix/readme-update` is branch name)
+4. Do the work, write [good commit messages](https://chris.beams.io/posts/git-commit/), and read the CONTRIBUTING file if there is one.
+5. Push to your origin repository.
+	- `git push -u origin hotfix/readme-update` (the `-u` flag links this branch with the remote one, so that in the future, you can simply type `git push origin`)
+6. Create a new PR in GitHub.
+7. Respond to any code review feedback.
+
+### Today's Reading
+
+#### Contributing to Open Source Projects
+
+- [The beginner's guide to contributing to a GitHub project](https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/) - a nice step-by-step guide on how to properly set up and contribute to open source projects.
+- Google's Python [styleguide](https://google.github.io/styleguide/pyguide.html)
+- [Contributing to the new fastai framework](https://forums.fast.ai/t/contributing-to-the-new-fastai-framework/7246) [fastai forums]
+- [How to contribute to fastai docs](https://forums.fast.ai/t/how-to-contribute-to-the-fast-ai-docs/27941/3) [fastai forums]
+- [Code Reviews: Before You Even Run The Code](https://lornajane.net/posts/2015/code-reviews-before-you-even-run-the-code)
+- [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
+
+#### Data Science
+
+- [Bringing the best out of Jupyter Notebooks for Data Science](https://towardsdatascience.com/bringing-the-best-out-of-jupyter-notebooks-for-data-science-f0871519ca29)
+- [An Introduction to the PyData World](https://speakerdeck.com/jakevdp/intro-to-pydata) - deck by Jake VanderPlas
 
 ## Day 6. January 15, Tuesday.
 
