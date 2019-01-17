@@ -10,6 +10,17 @@
 
 ---
 
+## Day 8. January 17, Thursday.
+
+I started a culinary herbs classifier. Many culinary herbs look the same to me. So I decided to do this project as homework for fastai v3 lesson 2. My goals for this project:
+
+- use lesson 2 functionality to download images from Google (haven't done it before)
+- train a model using transfer learning, preferrably get good performance
+- deploy a model (haven't done it before)
+- use [Starlette](https://www.starlette.io/) framework as recommnded in class (haven't done it befor)
+
+Out of 4 goals 3 are new to me. So I will do a lot of learning for this project.
+
 ## Day 7. January 16, Wednesday.
 
 Today I finished fastai part 1 v3 lesson 2.
