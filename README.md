@@ -10,9 +10,28 @@
 
 ---
 
+## Day 10. January 19, Saturday.
+
+Today I made a notebook and downloaded the data for my [green leafy vegetables](https://github.com/pechyonkin/culinary-herbs-classifier) classifier. The data is really dirty - a lot of irrelevant images. I will have to spend a lot of time cleaning the data for 29 classes tomorrow.
+
+### Useful Links
+
+- [The Evolution of Trust](https://ncase.me/trust/) - an interactive "game" that teaches the basics of game theory. Very interesting implications about the spread of trust and distrust in modern society. **Note**: this is not *directly* related to ML.
+- [How to create a deep learning dataset using Google Images](https://www.pyimagesearch.com/2017/12/04/how-to-create-a-deep-learning-dataset-using-google-images/) [post by Adrian Rosebrock]
+- [What is `torch.nn` really?](https://pytorch.org/tutorials/beginner/nn_tutorial.html) - awesome tutorial [recommended](https://twitter.com/jeremyphoward/status/1085586894543437824) by Jeremy Howard
+
+## Day 9. January 18, Friday.
+
+To get some data for my green leafy herbs I went to a closest vegetables market and recorded all Chinese names of green leafy things. I got a list of 30. Then I went back and meticuluosly converted all of them into [pinyin](https://en.wikipedia.org/wiki/Pinyin) and also translated to English. You can find the list [here](https://github.com/pechyonkin/culinary-herbs-classifier).
+
+### Useful Links
+
+- [Markdown table generator](https://www.tablesgenerator.com/markdown_tables)
+- [Chinese characters to pinyin converter](https://www.chineseconverter.com/en/convert/chinese-to-pinyin)
+
 ## Day 8. January 17, Thursday.
 
-I started a culinary herbs classifier. Many culinary herbs look the same to me. So I decided to do this project as homework for fastai v3 lesson 2. My goals for this project:
+I started a green leafy culinary herbs classifier. Many culinary herbs look the same to me. So I decided to do this project as homework for fastai v3 lesson 2. My goals for this project:
 
 - use lesson 2 functionality to download images from Google (haven't done it before)
 - train a model using transfer learning, preferrably get good performance
