@@ -10,6 +10,20 @@
 
 ---
 
+## Day 11. January 20, Sunday.
+
+Today is mostly reading day.
+
+- When reading source code for [`numpy.einsum`](https://docs.scipy.org/doc/numpy/reference/generated/numpy.einsum.html), I discovered that you can [`.pop`](https://github.com/numpy/numpy/blob/v1.15.4/numpy/core/einsumfunc.py#L1224) values from a dict. Python is amazing!
+- **Inner product** of two vectors -> scalar. Another way to think is inner product = row vector x column vector.
+- **Outer product** of two vectors -> matrix. Another way to think is that outer product = column vector x row vector.
+- **Matrix L2 norm** is the square root of the sum of all squared elements.
+
+### Useful Links
+
+- [Einstein Summation in Numpy](https://obilaniu6266h16.wordpress.com/2016/02/04/einstein-summation-in-numpy/) [blog by Olexa Bilaniuk] - this blog needs more attention, very good explanation and it broadened my multidimensional array toolkit. Note that both [PyTorch](https://pytorch.org/docs/stable/torch.html?highlight=einsum#torch.einsum) and [TensorFlow](https://www.tensorflow.org/api_docs/python/tf/einsum) have their own versions of `.einsum`.
+- [`numpy.einsum`](https://docs.scipy.org/doc/numpy/reference/generated/numpy.einsum.html)
+
 ## Day 10. January 19, Saturday.
 
 Today I made a notebook and downloaded the data for my [green leafy vegetables](https://github.com/pechyonkin/culinary-herbs-classifier) classifier. The data is really dirty - a lot of irrelevant images. I will have to spend a lot of time cleaning the data for 29 classes tomorrow.
