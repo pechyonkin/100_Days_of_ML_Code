@@ -10,6 +10,18 @@
 
 ---
 
+## Day 12. January 21, Monday.
+
+Today I finished and finally published an [article](https://pechyonkin.me/deep-learning-vision-non-vision-tasks/) about creative application of deep learning vision to non-vision tasks.
+
+### Useful Links
+
+My yesterday's [tweet](https://twitter.com/max_pechyonkin/status/1086852019376308224) sharing the articleabout `.einsum` from yesterday unexpectedly got popular. Some people shared other posts about it, so I am deepening my understanding of `.einsum`. Two new posts about it read today. 
+
+- [Blog post](https://rockt.github.io/2018/04/30/einsum) about einsum by Tim Rocktäschel
+- [A basic introduction to NumPy's einsum](http://ajcr.net/Basic-guide-to-einsum/)
+- [Programmer Competency Matrix](https://sijinjoseph.com/programmer-competency-matrix/)
+
 ## Day 11. January 20, Sunday.
 
 Today is mostly reading day.
