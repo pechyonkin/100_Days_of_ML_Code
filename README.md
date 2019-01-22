@@ -10,6 +10,10 @@
 
 ---
 
+## Day 13. January 22, Tuesday.
+
+I finally got to start cleaning the data. I learned that it is a very boring task, taking a lot of time. And also, Google image search for Chinese terms gives very low quality images. I probably deleted 40-50% of all downloaded images.
+
 ## Day 12. January 21, Monday.
 
 Today I finished and finally published an [article](https://pechyonkin.me/deep-learning-vision-non-vision-tasks/) about creative application of deep learning vision to non-vision tasks.
