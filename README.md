@@ -10,6 +10,26 @@
 
 ---
 
+## Day 14. January 24, Wednesday.
+
+I finished cleaning data, more than 75% of original downloaded images were removed. Most of them are images of foods containing greens that I was looking for. I went from more than 8000 images across 29 classes to a bit more than 2000. I spent hours cleaning all that.
+
+Then I built a classifier that achieved 22% error rate, which is high, but satisfactory given very similar classes and small dataset with low quality images.
+
+Mostly the classifier got confused on very similar greens. Examples:
+
+- cilantro and parsley
+- cilantro and celery
+- choy sum and gai lan (Chinese broccoli
+- tricolor daisy and crown daisy
+- watercress and pea shoots
+
+This is further set back by the fact that data is not of very high quality and not very big size.
+
+At this point, I am satisfied with result (22% error rate, about 88 mistakes out of 401 validation examples) because the cost of acquiring more data is not very interesting to me for learning purposes.
+
+The next step will be to deploy this model as a web-app for learning purposes.
+
 ## Day 13. January 22, Tuesday.
 
 I finally got to start cleaning the data. I learned that it is a very boring task, taking a lot of time. And also, Google image search for Chinese terms gives very low quality images. I probably deleted 40-50% of all downloaded images.
