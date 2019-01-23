@@ -12,6 +12,8 @@
 
 ## Day 14. January 24, Wednesday.
 
+### 1. Leafy Greens Project
+
 I finished cleaning data, more than 75% of original downloaded images were removed. Most of them are images of foods containing greens that I was looking for. I went from more than 8000 images across 29 classes to a bit more than 2000. I spent hours cleaning all that.
 
 Then I built a classifier that achieved 22% error rate, which is high, but satisfactory given very similar classes and small dataset with low quality images.
@@ -29,6 +31,11 @@ This is further set back by the fact that data is not of very high quality and n
 At this point, I am satisfied with result (22% error rate, about 88 mistakes out of 401 validation examples) because the cost of acquiring more data is not very interesting to me for learning purposes.
 
 The next step will be to deploy this model as a web-app for learning purposes.
+
+### 2. What is `torch.nn` really?
+
+I decided to follow along with "[What is torch.nn really?](https://pytorch.org/tutorials/beginner/nn_tutorial.html)" tutorial, typing along in a dedicated [notebook](https://github.com/pechyonkin/learning-pytorch/blob/master/torch-really.ipynb) by hand to train muscle memory, exploring PyTorches basics. So far PyTorch seems much more intuitive and easy than TensorFlow. No wonder fastai decided to use it as their backend.
+ 
 
 ## Day 13. January 22, Tuesday.
 
