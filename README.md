@@ -10,7 +10,17 @@
 
 ---
 
-## Day 14. January 24, Wednesday.
+## Day 15. January 24, Thursday.
+
+I continued with Jeremy Howard's PyTorch tutorial I started yesterday. Did not finish yet. But I have to say that after TensorFlow, PyTorch is a piece of cake. Much more pythonic and elegant, simple syntax and ideas. By comparison, TF feels like a monstrocity piece of software.
+
+I also transferred three articles from Medium to my personal blog:
+
+1. [Key deep learning architectures page](https://pechyonkin.me/architectures/), that I will update as I write more review of architectures (originally [here](https://medium.com/@pechyonkin))
+2. [LeNet-5 overview](https://pechyonkin.me/architectures/lenet/) (originally [here](https://medium.com/@pechyonkin/key-deep-learning-architectures-lenet-5-6fc3c59e6f4))
+3. [AlexNet overview](https://pechyonkin.me/architectures/alexnet/) (originally [here](https://medium.com/@pechyonkin/key-deep-learning-architectures-alexnet-30bf607595f1))
+
+## Day 14. January 23, Wednesday.
 
 ### 1. Leafy Greens Project
 
