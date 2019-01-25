@@ -10,6 +10,40 @@
 
 ---
 
+## Day 16. January 25, Friday.
+
+Worked on Jeremy's PyTorch tutorial. PyTorch is much more pleasing than TF. Will add more details later.
+
+### Notes:
+
+- formula for iterations: `for i in range((i - 1) // bs + 1)`. I worked it on paper and can explain it by example, but somehow this *doesn't click* and there is no aha moment with it yet.
+- `Sequential`
+- You can create a custom layer by subclassiing `nn.Module`
+- Python: when subclassing, in `.__init__(self)` you have to call `super().__init__()` to initialize parent class
+- any `nn.Parameter` assigned to `.self.<varname>` inside `nn.Module` subclass's `.__init()` will be added to model parameters and can be optimized
+- `torch.optim` has optimizers
+- `torch.utils.data` has:
+	- `TensorDataset` - builds a dataset from tensors
+	- `DataLoader` - builds iterable dataloader from dataset, needs to know batch size
+- call `model.train()` when optimizing (training) and `model.eval()` before inference (e.g. validation). This is needed for dropout, batchnorm and some other layers to work properly (they have different regimes for training and inference)
+- `tensor.view()` - the same as `np.ndarray.resize()`. It is actually a view on data in memory, because data is not changed / moved in memory when you call this method.
+- `tensor.item()` gives scalar for a tensor of only one value
+- `tensor.size(d)` gives shape of tensor across dimension `d`
+- nice trick to create tensors from numpy arrays by mapping `torch.tensor`:
+```python
+x_tr, y_tr, x_val, y_val = map(
+    torch.tensor, (x_tr, y_tr, x_val, y_val)
+)
+```
+- main idea of training steps (generally applies to deep learning):
+	1. forward pass: `pred = model(xb)`
+	2. calculate loss: `loss = loss_func(pred, yb)`
+	3. backward pass, calculates gradients for `model.parameters()`: `loss.backward()`
+	4. perform update of parameters accoridng to specific optimizer and learning rate: `opt.step()`
+	5. zero out gradients: `opt.zero_grad()`
+		- Stackoverflow: [Why do we need to explicitly call zero_grad()?](https://stackoverflow.com/questions/44732217/why-do-we-need-to-explicitly-call-zero-grad)
+		- Basically we can use gradient accumulation across batched, that's why.
+
 ## Day 15. January 24, Thursday.
 
 I continued with Jeremy Howard's PyTorch tutorial I started yesterday. Did not finish yet. But I have to say that after TensorFlow, PyTorch is a piece of cake. Much more pythonic and elegant, simple syntax and ideas. By comparison, TF feels like a monstrocity piece of software.
