@@ -10,6 +10,16 @@
 
 ---
 
+## Day 18. January 27, Sunday.
+
+Today I started writing an overview of the [ZFNet](https://arxiv.org/abs/1311.2901) for my [website](https://pechyonkin.me/architectures/).
+
+While doing it I got confused about convolutions, transposed convolutions and backprop throught them. That finally got me to read the [Guide to Convolution Arithmetic for Deep Learning](https://arxiv.org/abs/1603.07285) (with [awesome GIFs](https://github.com/vdumoulin/conv_arithmetic)). That clarified it a lot.
+
+## Day 17. January 26, Saturday.
+
+Today I [learned](https://www.youtube.com/watch?v=KdZ4HF1SrFs) that Python has `while-else` and `for-else` loops. The `else` clause is evaluated once when the loop condition becomes false. It won't be evaluated if there is a break statement or an error thrown inside the while loop.
+
 ## Day 16. January 25, Friday.
 
 Worked on Jeremy's PyTorch tutorial. PyTorch is much more pleasing than TF. Will add more details later.
