@@ -10,6 +10,10 @@
 
 ---
 
+## Day 19. January 28, Monday.
+
+Today I continued doing research for my blog post about MXNet. I watched CS231n 2017 [Lecture 7](https://youtu.be/6wcs6szJWMY) (I actually watched it before, this is how I knew I needed to rewatch it) and that clarified a lot about deconvolutions and visualization of convolutional networks. I think my next project will be visualizing convnets using different methods outlined in the lecure using PyTorch.
+
 ## Day 18. January 27, Sunday.
 
 Today I started writing an overview of the [ZFNet](https://arxiv.org/abs/1311.2901) for my [website](https://pechyonkin.me/architectures/).
