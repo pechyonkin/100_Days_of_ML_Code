@@ -10,6 +10,24 @@
 
 ---
 
+## Day 22. February 1, Friday.
+
+I skipped 1 day because I had business to attend to. Days like that can make me lose focus and then getting back on track can be difficult. I will have to make a mini-summary of 1/5 of the 100 journey completed.
+
+Today I was researching for my next post about ZFNet and also writing that post. I feel like I could have been more productive today. I will try to regainn my focus and keep working toward finishing the ZFnet post as well as deploying the green veggies project.
+
+## Day 21. January 30, Wednesday.
+
+### Useful Materials
+
+- [Right Code, Right Place, Right Time](https://youtu.be/BvqLgeNVg0Y) - PyData2018 talk by Tim Hopper about productizing ML
+
+## Day 20. January 29, Tuesday.
+
+I continued to write review of ZFNet. I hope I will have enogh grit to finish and publish it within 3 days.
+
+I went back to my green vegetables classisier. I need to deploy the model to a web app. Time to learn Docker, Kubernetes, microservices etc. I watched [this](https://youtu.be/1xo-0gCVhTU) introduction to get an overview of technologies and use cases.
+
 ## Day 19. January 28, Monday.
 
 Today I continued doing research for my blog post about MXNet. I watched CS231n 2017 [Lecture 7](https://youtu.be/6wcs6szJWMY) (I actually watched it before, this is how I knew I needed to rewatch it) and that clarified a lot about deconvolutions and visualization of convolutional networks. I think my next project will be visualizing convnets using different methods outlined in the lecure using PyTorch.
