@@ -10,6 +10,40 @@
 
 ---
 
+## Day 23. February 3, Sunday.
+
+After doing some research about [Graphcore](), I decided to dive deeper into how linear algebra subroutines are implemented at a low level, both on CPUs, GPUs and in distributed computation. I want to understand how deep learning works on the GPU. So I am spending today researching these quite low level details.
+
+- [How to build a processor for machine intelligence](https://www.youtube.com/watch?v=T8DvHnb3Y9g) - talk by Graphcore's CTO
+	- graphical structure of models
+	- "I've never seen a workload like this one", in 30 years of making processors @[5:30](https://youtu.be/T8DvHnb3Y9g?t=330)
+	- Microsoft Kinect as a "random forest machine"
+	- "**What is fundamental about machine intelligence compute task as a workload?**" [answer is [this](https://youtu.be/T8DvHnb3Y9g?t=500) list]
+	- [Bulk synchronous parallel](https://en.wikipedia.org/wiki/Bulk_synchronous_parallel)
+	- modern DL: save activations in memory (used for backprop step) - requires a lot of memory, but saves compute
+	- IPU: don't save all activations, only 1-in-N, recompute them as needed when doing backprop (you can recompute part of the activations starting from last 1-in-N precomputed activation), because you have a lot of compute, you can do it and you don't need a lot of memory (**AWESOME IDEA**)
+	- spend 30% more compute for 1-2 orders of magnitude less memory (10x-100x)
+	- this roughly means that 300MB of memory per chip as per their recent specification is similar to 3-30GB of "traditional" GPU, but with a much higher compute capability
+	- [Photos](https://www.eenewsanalog.com/news/graphcores-colossus-ipu-package) of packaged chip, and [some more](https://www.eenewsanalog.com/news/graphcores-two-chip-colossus-close-launch/page/0/1)
+- [Nigel Toon Graphcore Samsung CEO Summit 2017](https://youtu.be/7qp3kLHgsck)
+- [Professor Jack Dongarra talks about BLAS and CUDA](https://www.youtube.com/watch?v=lk0qYdnv0bg) - an old video from 2008. All of linear algebra soubroutines are implemented in Fortrann and C. Single vs. double precision performance spread 5x-10x. Most computation in single precision to be fast, then use double precision to refine solution.
+- [Linear Algebra on GPU](https://youtu.be/7rkucJiw_TE) - a relatively short overview of a broad topic, cuBLAS and MAGMA. Data parallelism on GPU (vs. task parallelism on CPU) [part of [online seminars](https://www.sharcnet.ca/help/index.php/Online_Seminars) sequence]
+	- maximize throughput
+	- data parallelism for single task
+	- super-threaded ?
+	- large-scale [SIMD](https://en.wikipedia.org/wiki/SIMD)
+	- memory bandwidth bottlenecks RAM <-fast-> CPU <-slow-> GPU <-very fast-> VRAM
+	- CUDA programming model:
+		- CPU is host
+		- GPU is coprocessor
+		- kernels are functions executed in parallel
+		- CPU manages all memory allocations, data transfers and invocation of kernels on the GPU
+	- LA on CPU: BLAS, LAPACK
+	- LA on GPU: CUBLAS, CULA, MAGMA
+	- GPU memory is high bandwidth / high latency (truck analogy - slow, but transports a lot)
+	- CPU memory is low bandwidth / low latency (sports car analogy - fast and transports very little)
+	- GPU shared memory - small region of memory where random access is very fast. Multiple threads don't need to access memory in adjacent way (*coalesced way*).
+
 ## Day 22. February 1, Friday.
 
 I skipped 1 day because I had business to attend to. Days like that can make me lose focus and then getting back on track can be difficult. I will have to make a mini-summary of 1/5 of the 100 journey completed.
