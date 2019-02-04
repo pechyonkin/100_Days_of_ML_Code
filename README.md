@@ -10,9 +10,27 @@
 
 ---
 
+## Day 24. February 4, Monday.
+
+I continued learning about GPU architecture and parallel compute. I learned about processes/threads. And also about architectural details of Nvidia GPUs.
+
+#### CUDA Tutorials [Playlist](https://www.youtube.com/playlist?list=PL33Hr-B6eUxCLjiHaKHTcwEn5JZKCdyjX):
+1. [CUDA Part A: GPU Architecture Overview and CUDA Basics; Peter Messmer (NVIDIA)](https://youtu.be/nRSxp5ZKwhQ) [stopped at 59:44]
+
+#### Graphcore Research
+- [Simon Knowles - More complex models and more powerful machines](https://www.youtube.com/watch?v=dLvkF_TmyAc) - talk by Simon Knowles, Graphcore's CTO [May 2018]
+	- most of customers now focus on capability 
+	- existential problem for many businesses
+	- "we don't care how much it costs"
+	- "we just need to get there before our competitors"
+	- designing the most sophisticated chip for research, for finding a way to do *x* with machine intelligence (whatever that *x* is depends on each customer's application)
+	- **recurrences are convolution in time instead of in space**
+	- **reversible models** - do not require storage of forward pass activations, are computed automatically during backward pass
+- [CogX 2018 - Future of Hardware Panel](https://youtu.be/zRPpyabE7p4)
+
 ## Day 23. February 3, Sunday.
 
-After doing some research about [Graphcore](), I decided to dive deeper into how linear algebra subroutines are implemented at a low level, both on CPUs, GPUs and in distributed computation. I want to understand how deep learning works on the GPU. So I am spending today researching these quite low level details.
+After doing some research about [Graphcore](https://www.graphcore.ai/), I decided to dive deeper into how linear algebra subroutines are implemented at a low level, both on CPUs, GPUs and in distributed computation. I want to understand how deep learning works on the GPU. So I am spending today researching these quite low level details.
 
 - [How to build a processor for machine intelligence](https://www.youtube.com/watch?v=T8DvHnb3Y9g) - talk by Graphcore's CTO
 	- graphical structure of models
