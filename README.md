@@ -10,6 +10,20 @@
 
 ---
 
+## Day 26. February 6, Wednesday.
+
+I got to finally deploy my [leafy greens model](https://herbs.onrender.com/).
+
+[Render](https://render.com) is very easy to use. I used [this]() tutorial to deploy. I had to play with css and html a little bit to adapt it for my needs. Also classes did not want to present themselves as English names and instead were presented as class numbers. I used a Python dictionary to map class number to class name and it worked.
+
+I did not think deployment is so easy. Thanks to services like [Render](https://render.com) for making life of deep learning practitioners easier!
+
+Tomorrow I can finally start the [next lesson](https://course.fast.ai/videos/?lesson=3) of fast.ai course.
+
+## Day 25. February 5, Tuesday.
+
+Today I finished and published [overview of the ZFNet](https://pechyonkin.me/architectures/zfnet/). Writing is a good way to understand small details of a paper, as it makes you think how it was done. Another good way is to implement the paper in code and make it work. I will also do that.
+
 ## Day 24. February 4, Monday.
 
 I continued learning about GPU architecture and parallel compute. I learned about processes/threads. And also about architectural details of Nvidia GPUs.
