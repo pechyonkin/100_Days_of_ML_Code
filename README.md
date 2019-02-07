@@ -10,6 +10,44 @@
 
 ---
 
+## Day 27. February 7, Thursday.
+
+### FastAI
+
+I watched Lecture 3 of FastAI v3 course. A lot of information to digest.
+
+### ML Training Video
+
+I also watched [this](https://youtu.be/vVd5d3UTbHA) solution of Kaggle Human Protein Atlas Image Classification competition 4-th place solution (in Russian). They used FastAI! Key takeaways and areas for further research:
+
+- stacking
+- adversarial validation (Xception)?
+- averaging among validation folds with different random seeds to find optimal thresholds?
+- SE-ResNext-50
+- Focal loss, [LSEP loss](https://arxiv.org/abs/1704.03135) - add LSEP after model is trained, to finetune
+- Lovasz loss
+- network head: `AdaptiveConcat -> BN -> Dropout -> Dense`
+- augmentation: D4?
+- TTA: 32x?
+- meta-features for stacking: brightness, contrast, channel correlation
+- Stacking (on validation):
+	-  LightGBM
+	- outer folds: 5
+	- inner folds: 3 (up to 5 times depending on class)
+	- repeat 20 times (on outer with different seeds)
+	- average voting
+	- ~375 models for each class
+	- best single model - 21st place
+- sample pairing
+- mixup
+- metric learning
+- user bestfitting (1-st place)
+- sample pairing vs. mixup
+
+### Go language crash course
+
+[This](https://youtu.be/Xj5lo2-ZvRg) tutorial.
+
 ## Day 26. February 6, Wednesday.
 
 I got to finally deploy my [leafy greens model](https://herbs.onrender.com/).
