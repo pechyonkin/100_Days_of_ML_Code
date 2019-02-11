@@ -10,6 +10,14 @@
 
 ---
 
+## Day 29. February 11, Monday.
+
+Expanding on Python knowledge:
+
+- [Python AST Ecosystem](https://youtu.be/Yq3wTWkoaYY) [materials are [here](https://github.com/hchasestevens/europython-2018)]
+
+I started doing the Kaggle Planet competition as taught in lesson 3. I've set up repos, downloaded data through Kaggle CLI and am ready to go.
+
 ## Day 28. February 9, Satruday.
 
 I delved in Python today. I watched and read about decorators and [amazing](https://youtu.be/Z_OAlIhXziw) [things](https://youtu.be/D1twn9kLmYg) that can be done with them. These 2 videos are very advanced and I will only benefit from rewatching. But even if I didn't get everything from the first watch, I still have a much better understanding of Python.
