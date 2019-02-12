@@ -10,6 +10,14 @@
 
 ---
 
+## Day 30. February 12, Tuesday.
+
+Today I went through the [Kaggle Planet Competition](https://www.kaggle.com/c/planet-understanding-the-amazon-from-space) tutorial from Lesson 3.
+
+I read the data [block API docs](https://docs.fast.ai/data_block.html). This API is very flexible but I will need more time and practice to familiarize myself with it closely.
+
+I also started with [mlcourse.ai](https://mlcourse.ai/). Looks exciting. Made by top kagglers from [ods.ai](http://ods.ai/).
+
 ## Day 29. February 11, Monday.
 
 Expanding on Python knowledge:
