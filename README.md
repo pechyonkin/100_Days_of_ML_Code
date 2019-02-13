@@ -10,6 +10,12 @@
 
 ---
 
+## Day 31. February 13, Wednesday.
+
+Having read the article titled "[SQL: One of the Most Valuable Skills](http://www.craigkerstiens.com/2019/02/12/sql-most-valuable-skill/)", I went and completed the [Intro to SQL for Data Science](https://www.datacamp.com/courses/intro-to-sql-for-data-science) course on DataCamp.
+
+I also started working on the writeup about the leafy greens classifier for the [portfolio page](https://pechyonkin.me/portfolio/) on my website.
+
 ## Day 30. February 12, Tuesday.
 
 Today I went through the [Kaggle Planet Competition](https://www.kaggle.com/c/planet-understanding-the-amazon-from-space) tutorial from Lesson 3.
