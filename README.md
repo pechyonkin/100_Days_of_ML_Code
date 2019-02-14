@@ -10,11 +10,22 @@
 
 ---
 
-## Day 31. February 13, Wednesday.
+## Day 32. February 14, Thursday.
+
+1. Watched [James Powell - So you want to be a Python expert?](https://youtu.be/cKPlPJyQrt4).
+2. Finished reading [Python Tricks](https://dbader.org/products/python-tricks-book/) book by Dan Bader.
+3. Started [Joining Data in SQL](https://www.datacamp.com/courses/joining-data-in-postgresql) course at DataCamp.
+
+# Day 31. February 13, Wednesday.
 
 Having read the article titled "[SQL: One of the Most Valuable Skills](http://www.craigkerstiens.com/2019/02/12/sql-most-valuable-skill/)", I went and completed the [Intro to SQL for Data Science](https://www.datacamp.com/courses/intro-to-sql-for-data-science) course on DataCamp.
 
 I also started working on the writeup about the leafy greens classifier for the [portfolio page](https://pechyonkin.me/portfolio/) on my website.
+
+### Other interesting links:
+
+- [PostgreSQL](https://en.wikipedia.org/wiki/PostgreSQL)
+- [Job loss due to AI — How bad is it going to be?](https://www.skynettoday.com/editorials/ai-automation-job-loss) [Skynet Today]
 
 ## Day 30. February 12, Tuesday.
 
