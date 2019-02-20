@@ -10,6 +10,36 @@
 
 ---
 
+## Day 35. February 20, Wednesday.
+
+I worked on a web-app to collect data for my next portfolio project, which is an eye tracking system. Had to dig into using Flask, HTML, Javascript and CSS. Also spent quite some time getting my laptops web-camera to work with the app inside the browser.
+
+## Day 34. February 19, Tuesday.
+
+### Other Resources
+- [Chris Albon](https://chrisalbon.com/) - a lot of mini-notes on different ML-related topics. Very nice. [Repo](https://github.com/chrisalbon/notes). Which framework does he use to generate the website?
+- [Frobenius norm](https://en.wikipedia.org/wiki/Matrix_norm) is like a vector's $L_2$ norm: $\Vert A \Vert_F=\sqrt{\sum_{i}\sum_{j}|a_{ij}^2|}$
+
+## Day 33. February 18, Monday.
+
+### mAP - mean varage precision:
+- [Precision and recall](https://en.wikipedia.org/wiki/Precision_and_recall)
+- [Average precision and precision@k](https://en.wikipedia.org/wiki/Evaluation_measures_(information_retrieval))
+- [Precision-recall curves – what are they and how are they used?](https://acutecaretesting.org/en/articles/precision-recall-curves-what-are-they-and-how-are-they-used)
+- [Measuring Object Detection models — mAP — What is Mean Average Precision?](https://towardsdatascience.com/what-is-map-understanding-the-statistic-of-choice-for-comparing-object-detection-models-1ea4f67a9dbd)
+- PASCAL VOC [paper](http://homepages.inf.ed.ac.uk/ckiw/postscript/ijcv_voc09.pdf) describes hwo mAP is calculated
+
+### Other Resources
+- [Spinning Up in Deep RL](https://spinningup.openai.com/en/latest/)
+- [Gradient Checkpointing](https://github.com/openai/gradient-checkpointing) - fit a larger model into your GPU memory
+- [Machine Learning for Artists](https://ml4a.github.io/)
+
+### Read Papers
+- [R-CNN](https://arxiv.org/abs/1311.2524) – region proposal -> CNN -> SVM:
+	- mAP
+	- precision-recall curve
+	- non-maximum supression 
+
 ## Day 32. February 14, Thursday.
 
 1. Watched [James Powell - So you want to be a Python expert?](https://youtu.be/cKPlPJyQrt4).
