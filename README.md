@@ -10,6 +10,10 @@
 
 ---
 
+## Days 36–37. February 21–22.
+
+I have built a web-based data collection system for my eye tracking system. It was very tough but now it is working. I learned basics of HTML, JavaScript, Ajax and Flask. I will finish the system and then I can collect the data for the project, train the model and see if it makes good predictions.
+
 ## Day 35. February 20, Wednesday.
 
 I worked on a web-app to collect data for my next portfolio project, which is an eye tracking system. Had to dig into using Flask, HTML, Javascript and CSS. Also spent quite some time getting my laptops web-camera to work with the app inside the browser.
