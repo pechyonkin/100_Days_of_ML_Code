@@ -10,6 +10,10 @@
 
 ---
 
+## Days 38–40. February 23–25.
+
+I finished the prototype of the eye trracking system. The model trained well and error was relatively low. When I visualized predictions, it turned out in some cases system is hundreds of pixels away from true label but it is always in the correct area. I think if I collect more data, especially for more people (currently it is only me), then the model will be able to generalize well. In addition there are more ways to make it better, for example, force the output to be in the correct range (inside the screen). At the moment, predictions are unbounded. I will work on this in the following days.
+
 ## Days 36–37. February 21–22.
 
 I have built a web-based data collection system for my eye tracking system. It was very tough but now it is working. I learned basics of HTML, JavaScript, Ajax and Flask. I will finish the system and then I can collect the data for the project, train the model and see if it makes good predictions.
