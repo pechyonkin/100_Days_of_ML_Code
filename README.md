@@ -10,6 +10,12 @@
 
 ---
 
+## Day 41. February 26.
+
+Today I finished [Joining Data in SQL](https://www.datacamp.com/courses/joining-data-in-postgresql) course on DataCamp.
+
+Then, I started [Intermediate SQL](https://www.datacamp.com/courses/intermediate-sql).
+
 ## Days 38–40. February 23–25.
 
 I finished the prototype of the eye trracking system. The model trained well and error was relatively low. When I visualized predictions, it turned out in some cases system is hundreds of pixels away from true label but it is always in the correct area. I think if I collect more data, especially for more people (currently it is only me), then the model will be able to generalize well. In addition there are more ways to make it better, for example, force the output to be in the correct range (inside the screen). At the moment, predictions are unbounded. I will work on this in the following days.
